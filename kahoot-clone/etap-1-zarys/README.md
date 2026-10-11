@@ -1,0 +1,136 @@
+# Etap 1: Zarys projektu QuizMaster
+
+## 1. Opis problemu
+
+Nauczyciele, trenerzy i prowadzący zajęcia grupowe często potrzebują szybko sprawdzić wiedzę uczestników lub przeprowadzić interaktywny quiz podczas zajęć. Tradycyjne metody (papierowe testy, podnoszenie rąk) są czasochłonne, trudne do zorganizowania i nie angażują wszystkich uczestników równocześnie. 
+
+**Problemy użytkowników:**
+- **Prowadzący**: Trudność w szybkim przygotowaniu quizu, brak możliwości śledzenia postępów uczestników na żywo, konieczność ręcznego liczenia wyników
+- **Uczestnicy**: Brak natychmiastowego feedbacku, problemy z anonimowością (strach przed oceną przez innych), nierówny dostęp do odpowiadania (głośniejsi dominują)
+
+Potrzebne jest rozwiązanie, które pozwoli prowadzącemu szybko uruchomić quiz, a uczestnikom łatwo dołączyć i odpowiadać na pytania bez konieczności instalowania dodatkowego oprogramowania czy zakładania kont.
+
+## 2. Docelowi użytkownicy
+
+### Prowadzący (główny użytkownik)
+- **Kim jest**: Nauczyciel, trener, wykładowca, prowadzący warsztaty
+- **Umiejętności techniczne**: Podstawowe (potrafi obsługiwać przeglądarkę, otwierać pliki)
+- **Cele**: Szybko przeprowadzić quiz, zobaczyć kto skończył, sprawdzić wyniki grupy
+- **Kontekst użycia**: Podczas zajęć (sala lekcyjna, szkolenie online), czas ograniczony (45-90 min)
+
+### Uczestnik
+- **Kim jest**: Uczeń (liceum, studia), osoba szkolona, uczestnik warsztatów
+- **Umiejętności techniczne**: Podstawowe (potrafi wpisać adres w przeglądarce, kliknąć przycisk)
+- **Cele**: Dołączyć do quizu bez komplikacji, odpowiedzieć na pytania, sprawdzić swój wynik
+- **Kontekst użycia**: Używa własnego telefonu lub komputera w pracowni
+
+## 3. Rozwiązanie
+
+**QuizMaster** to aplikacja webowa inspirowana Kahoot, która umożliwia prowadzenie quizów w trybie asynchronicznym (każdy uczestnik w swoim tempie).
+
+### Kluczowe funkcje:
+
+**Dla prowadzącego:**
+1. Import quizu z pliku JSON (przygotowanego wcześniej)
+2. Generowanie 6-cyfrowego PIN-u dla sesji
+3. Dashboard pokazujący postępy uczestników w czasie rzeczywistym (kto dołączył, ile pytań rozwiązał)
+4. Zamknięcie sesji i wyświetlenie rankingu z wynikami
+
+**Dla uczestnika:**
+1. Dołączenie do sesji przez wpisanie PIN-u i imienia
+2. Rozwiązywanie quizu (pytania jednokrotnego wyboru)
+3. Potwierdzenie zakończenia ("Dziękujemy za udział")
+
+### Unikalne cechy:
+- **Brak konieczności rejestracji** - uczestnik podaje tylko imię
+- **Tryb asynchroniczny** - uczestnicy nie muszą odpowiadać równocześnie, każdy pracuje we własnym tempie (w przeciwieństwie do Kahoot gdzie wszyscy widzą to samo pytanie)
+- **Brak stresu czasowego** - brak odliczania czasu przy pytaniach
+- **Prosty deployment** - jeden plik HTML do otwarcia w przeglądarce
+
+## 4. Narzędzia
+
+### Technologie:
+- **Frontend**: HTML5, CSS3, vanilla JavaScript (ES6+)
+- **Przechowywanie danych**: localStorage API (symulacja backendu)
+- **Hosting**: Brak (aplikacja działa lokalnie, pliki HTML)
+
+### Biblioteki zewnętrzne:
+- Google Fonts (Montserrat, Open Sans) - czytelna typografia
+
+### Środowisko rozwoju:
+- Edytor kodu (VS Code / WebStorm)
+- Przeglądarka: Chrome / Firefox (developer tools)
+- System kontroli wersji: Git
+
+### Dlaczego te narzędzia?
+- **Vanilla JavaScript** - zespół zna technologię, nie wymaga buildu ani zależności
+- **localStorage** - zgodne z wymaganiami projektu (symulacja, nie pełna aplikacja)
+- **Brak frameworka** - mniejsza złożoność, łatwiejszy debugging, szybsze prototypowanie
+
+## 5. Odniesienia do innych rozwiązań
+
+### Kahoot (kahoot.com)
+**Jak rozwiązuje problem:**
+- Prowadzący tworzy quiz w edytorze online
+- Uczestnicy dołączają przez PIN
+- Pytania wyświetlane synchronicznie (wszyscy widzą to samo)
+- Ranking na żywo po każdym pytaniu
+
+**Wady:**
+- Wymaga konta i połączenia z internetem
+- Synchroniczny tryb - stresujący dla wolniejszych uczestników
+- Ograniczenie darmowej wersji (liczba uczestników)
+- Brak możliwości pracy offline
+
+**Co zrobimy lepiej:**
+- Tryb asynchroniczny (każdy w swoim tempie)
+- Brak konieczności rejestracji
+- Działa lokalnie (bez serwera)
+
+### Quizizz (quizizz.com)
+**Jak rozwiązuje problem:**
+- Asynchroniczny tryb (jak nasz)
+- Natychmiastowy feedback po każdej odpowiedzi
+
+**Wady:**
+- Wymaga konta i internetu
+- Skomplikowany interfejs (dużo opcji)
+- Reklamy w darmowej wersji
+
+**Co zrobimy lepiej:**
+- Prostsza obsługa (mniej opcji = mniej zamieszania)
+- Brak reklam i wymagań logowania
+
+### Mentimeter (mentimeter.com)
+**Jak rozwiązuje problem:**
+- Interaktywne prezentacje z ankietami
+- Wyniki na żywo
+
+**Wady:**
+- Głównie do ankiet, nie quizów z punktacją
+- Wymaga konta premium dla większości funkcji
+
+**Co zrobimy lepiej:**
+- Skupienie na quizach edukacyjnych (z punktacją)
+- Wszystko za darmo (open source)
+
+## 6. Zespół projektowy
+
+**Członkowie zespołu:**
+- [Imię Nazwisko 1] - [rola, np. frontend, design]
+- [Imię Nazwisko 2] - [rola]
+- [Imię Nazwisko 3] - [rola]
+- [Imię Nazwisko 4] - [rola] (opcjonalnie)
+
+**Podział obowiązków:**
+- Etap 1-2 (dokumentacja): Wspólnie
+- Etap 3-4 (szkice, prototyp papierowy): [do uzupełnienia]
+- Etap 5 (prototyp komputerowy): [do uzupełnienia]
+- Etap 6 (finalna implementacja): [do uzupełnienia]
+
+---
+
+**Kontakt:**
+- Repozytorium: [link do repo, jeśli jest]
+- Prowadzący zajęć: [imię prowadzącego]
+- Data oddania: [data]
