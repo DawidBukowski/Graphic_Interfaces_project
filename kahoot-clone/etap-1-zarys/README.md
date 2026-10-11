@@ -114,7 +114,92 @@ Potrzebne jest rozwiązanie, które pozwoli prowadzącemu szybko uruchomić quiz
 - Skupienie na quizach edukacyjnych (z punktacją)
 - Wszystko za darmo (open source)
 
-## 6. Zespół projektowy
+## 6. Wizualizacja interfejsu
+
+Poniżej przedstawiamy wireframe'y pokazujące planowany układ elementów w każdym ekranie aplikacji. Obrazki znajdują się w katalogu `mockups/`.
+
+### Ekran główny (Landing Page)
+
+![Landing Page](mockups/01-landing-page.png)
+
+**Elementy:**
+- Logo QuizMaster na górze
+- Dwa duże przyciski wyboru roli (Prowadzący / Uczestnik)
+- Link do pobrania przykładowych quizów
+
+---
+
+### Interfejs prowadzącego
+
+#### Widok 1: Import quizu
+
+![Host Import](mockups/02-host-import.png)
+
+**Elementy:**
+- Obszar do wyboru pliku JSON (drag & drop lub kliknięcie)
+- Wyświetlenie informacji o wybranym quizie (tytuł, liczba pytań)
+- Przycisk "Utwórz sesję"
+
+#### Widok 2: Dashboard sesji
+
+![Host Dashboard](mockups/03-host-dashboard.png)
+
+**Elementy:**
+- Duży wyświetlacz PIN-u (żółte tło, wyraźne cyfry)
+- Przycisk kopiowania PIN-u do schowka
+- Tabela uczestników z postępem (imię, nr pytania, status)
+- Przycisk "Zamknij sesję"
+
+#### Widok 3: Wyniki
+
+![Host Results](mockups/04-host-results.png)
+
+**Elementy:**
+- Tytuł "Ranking" z emoji trofeum
+- Lista uczestników posortowana według punktów
+- Wyświetlenie wyniku każdego uczestnika (punkty/100)
+- Przycisk "Nowa sesja"
+
+---
+
+### Interfejs uczestnika
+
+#### Widok 1: Dołączanie do sesji
+
+![Participant Join](mockups/05-participant-join.png)
+
+**Elementy:**
+- Pole tekstowe na 6-cyfrowy PIN
+- Pole tekstowe na imię uczestnika
+- Przycisk "Dołącz"
+
+#### Widok 2: Pytanie quizu
+
+![Participant Question](mockups/06-participant-question.png)
+
+**Elementy:**
+- Licznik pytań (np. "Pytanie 3/10")
+- Treść pytania w dużej ramce
+- 4 przyciski odpowiedzi (A, B, C, D) w różnych kolorach (czerwony, niebieski, żółty, zielony)
+
+#### Widok 3: Zakończenie
+
+![Participant Finish](mockups/07-participant-finish.png)
+
+**Elementy:**
+- Emoji checkmark
+- Komunikat "Dziękujemy za udział!"
+- Informacja "Wyniki ogłosi prowadzący"
+
+---
+
+### Uwagi projektowe:
+
+- **Paleta kolorów**: Inspirowana Kahoot - żywe kolory (fiolet, pomarańcz, czerwony, niebieski, żółty, zielony)
+- **Typografia**: Duże, czytelne czcionki (Montserrat dla nagłówków, Open Sans dla tekstu)
+- **Layout**: Centrowany, max szerokość 800px, responsywny
+- **Przejścia**: Animacje fade-in/out między pytaniami
+- **Dostępność**: Wysokie kontrasty, duże obszary klikalne
 
 **Członkowie zespołu:**
 - [Imię Nazwisko 1] - [rola, np. frontend, design]
