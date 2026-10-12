@@ -202,20 +202,20 @@ Poniżej przedstawiamy wireframe'y pokazujące planowany układ elementów w ka�
 - **Dostępność**: Wysokie kontrasty, duże obszary klikalne
 
 **Członkowie zespołu:**
-- [Imię Nazwisko 1] - [rola, np. frontend, design]
-- [Imię Nazwisko 2] - [rola]
-- [Imię Nazwisko 3] - [rola]
-- [Imię Nazwisko 4] - [rola] (opcjonalnie)
+- Dawid Bukowski
+- Jan Bajor
+- Kacper Dawid
+- Michał Kryń
 
 **Podział obowiązków:**
 - Etap 1-2 (dokumentacja): Wspólnie
-- Etap 3-4 (szkice, prototyp papierowy): [do uzupełnienia]
-- Etap 5 (prototyp komputerowy): [do uzupełnienia]
-- Etap 6 (finalna implementacja): [do uzupełnienia]
+- Etap 3-4 (szkice, prototyp papierowy)
+- Etap 5 (prototyp komputerowy)
+- Etap 6 (finalna implementacja)
 
 ---
 
 **Kontakt:**
-- Repozytorium: [link do repo, jeśli jest]
-- Prowadzący zajęć: [imię prowadzącego]
-- Data oddania: [data]
+- Repozytorium: [https://github.com/DawidBukowski/Graphic_Interfaces_project/]
+- Prowadzący zajęć: dr Wojciech Palacz
+- Data oddania:
