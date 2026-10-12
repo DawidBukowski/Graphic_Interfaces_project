@@ -44,7 +44,10 @@ cd etap-5-prototyp-komputerowy/  # lub etap-6-finalna-implementacja/
 
 ## Zespół
 
-[Do uzupełnienia przez zespół]
+- Dawid Bukowski
+- Jan Bajor
+- Kacper Dawid
+- Michał Kryń
 
 ## Licencja
 
